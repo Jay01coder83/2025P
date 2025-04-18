@@ -1,0 +1,79 @@
+@media (min-width: 768px) {
+    .navbar-nav {
+      margin: 0 auto;
+    }
+  }
+  .carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Black overlay */
+    z-index: 1;
+  }
+
+  .carousel-caption {
+    z-index: 2;
+  }
+
+  .carousel-caption h1 {
+    font-weight: bold;
+    font-size: 3rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption .btn {
+    margin-top: 1rem;
+  }
+  .project-img {
+    overflow: hidden;
+  }
+  
+  .project-img img {
+    transition: transform 0.3s ease;
+  }
+  
+  .project-img:hover img {
+    transform: scale(1.05);
+  }
+  
+  .project-img .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+  
+  .project-img:hover .overlay {
+    opacity: 1;
+  }
+  #contact input:focus,
+  #contact textarea:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+  }
+  footer a:hover {
+    text-decoration: underline;
+    color: #0d6efd !important;
+  }
